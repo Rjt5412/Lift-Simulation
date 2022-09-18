@@ -1,4 +1,10 @@
-.floor-num-text{
-    text-align: right;
+.floor{
     border-bottom: 1px solid #000;
+}
+
+.left-door, .right-door{
+    align-self: center;
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
 }
