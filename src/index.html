@@ -1,19 +1,21 @@
 <!DOCTYPE html>
     <head>
-        <script src="js/main.js" defer></script>
+        <title>Lift Simulation</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js" defer></script>
     </head>
     <body>
         <section class="app-form">
             <form id="lift-simulation-form">
                 <label for="no-of-lifts">Enter the number of lifts:</label>
-                <input type="number" name="no-of-lifts"><br>
+                <input type="number" name="no-of-lifts" min="1" max="10" required value="1"><br>
                 <label for="no-of-floors">Enter the number of floors:</label>
-                <input type="number" name="no-of-floors"><br>
+                <input type="number" name="no-of-floors" min="1" max="10" required value="2"><br>
                 <button type="submit">Generate</button>
             </form>
         </section>
-        <section class="lifts-container">
-            <!-- TODO: Figure out how to generate this from JS-->
+        <section class="content-container">
+            <div class="lifts-space"></div>
         </section>
         
     </body>
